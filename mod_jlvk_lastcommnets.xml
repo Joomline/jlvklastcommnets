@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8.0" method="upgrade">
+	<name>JL VK Last Comments</name>
+	<creationDate>2022-10-13</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>sale@joomline.ru</authorEmail>
+	<authorUrl>https://www.joomline.ru</authorUrl>
+	<copyright>Copyright 2012-2022 JoomLine.ru All rights reserved!</copyright>
+	<license>license GNU/GPL: http://www.gnu.org/copyleft/gpl.html </license>
+	<version>3.0</version>
+	<description>Отображает последние комментарии оставленные через виджет вконтакте</description>
+	<files>
+		<filename module="mod_jlvk_lastcommnets">mod_jlvk_lastcommnets.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+          <fieldset name="basic">			<field name="api_id" type="text" label="ApiID" description="Идентификатор сайта вконтакте" default="ApiID"/>			<field name="width" type="text" label="Ширина" description="Задает ширину блока в пикселах (целое число > 300)" default="300"/>			<field name="height" type="text" label="Высота" description="Задает высоту блока" default="0"/>
+			<field name="limit" type="text" label="Количество" description="Количество комментариев отображаемых в модуле" default="10"/>
+			<field	name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+     </fields>
+ 
+	</config>	
+</extension>
